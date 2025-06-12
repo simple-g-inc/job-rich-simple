@@ -23,7 +23,10 @@
       "edgeToEdgeEnabled": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "webpack",
+      "output": "single",
+      "publicPath": "https://jobrich-simple-419da.web.app/"
     }
   }
 }
