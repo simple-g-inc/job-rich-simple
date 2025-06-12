@@ -12,5 +12,15 @@
         "destination": "/index.html"
       }
     ]
+  },
+  "apphosting": {
+    "source": {
+      "type": "local",
+      "directory": "web-build"
+    },
+    "build": {
+      "command": "npx expo export:web",
+      "directory": "web-build"
+    }
   }
 } 
