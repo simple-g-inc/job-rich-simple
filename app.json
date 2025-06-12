@@ -12,6 +12,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -26,7 +29,16 @@
       "favicon": "./assets/favicon.png",
       "bundler": "webpack",
       "output": "single",
-      "publicPath": "https://jobrich-simple-419da.web.app/"
-    }
+      "publicPath": "/",
+      "build": {
+        "babel": {
+          "include": ["@expo/vector-icons"]
+        }
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/your-project-id"
+    },
+    "sdkVersion": "53.0.0"
   }
 }
